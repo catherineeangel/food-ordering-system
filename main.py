@@ -103,14 +103,10 @@ def customer_order():
             selected_drink.append(drink_name)
             selected_price.append(drink_name.get_price())
 
-        #split_bill(names) 
-        #creates a function that prints out the selected menu   
     print("\n---------------------------------------")
 
 def print_orders():
-    #basic idea : doesn't work if there are more than 1 items --> the output will be print twice/more
-    #for x in range(len(selected_menu)):
-    #    print(selected_menu[x].get_name()
+
     print("Here are your orders:")
     for item in selected_menu: #item represents either food/ drink
         #total price 
@@ -146,32 +142,7 @@ def count_total_price():
     print("---------------------------------------")
     print("Total price: $" +  str(sum(selected_price)))
 
-
-#TEST
-#split bill function
-#def split_bill(names):
-#    for name in names:
-#        print(name + "'s order: ")
-#        for x in range(len(selected_menu)):
-#            print(food_name.get_name())
-
-
     
-#TEST      
-#--makes class customer where it inputs the customer and num of people
-#class Customer:
-#    def __init__(self, name, number):
-#        self.name = name 
-#        name = 
-#        self.number = number
-#
-#    def greetings():
-#        print("Hi, welcome to Home Cafe!")
-#    def number_of_people():
-
-#to simplify the food and drink lists,, create some function....
-#creates food list 
-
 foods =[
     Food("Carbonara", 8),
     Food("Fish Burger", 6),
